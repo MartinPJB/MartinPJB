@@ -5,4 +5,4 @@ The projects I publish here are mainly ideas I have on a whim. They are mainly t
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Cozax&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 <br>
-[![Profile](https://github-readme-stats.vercel.app/api?username=Cozax&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)](https://github-readme-stats.vercel.app/api?username=Cozax&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+[![Profile](https://github-readme-stats.vercel.app/api?username=Cozax)](https://github-readme-stats.vercel.app/api?username=Cozax)
