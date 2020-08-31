@@ -1,0 +1,157 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Html */
+html {scroll-behavior: smooth;}  
+* {outline: none;animation: fadeIn 2s ease;}
+body {margin: 0;font-family: 'Poppins', sans-serif;}
+section {min-height: 50vh;}
+a, a:hover, a:visited {
+    color: black;
+    text-decoration: none;
+}
+button {
+    padding: 1.3pc 2.5pc;
+    min-width: 20vh;
+    margin: 5pc 2pc .5pc 2pc;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.23);
+    cursor: pointer;
+
+    color: white;
+    background: #4983ff;
+}
+button:first-of-type {
+    color: white;
+    background: black;
+}
+
+/* Classes */
+.t-align-center {text-align: center;}
+
+/* Navbar */
+header nav ul {
+    margin: 0;
+    padding: 1.5pc;
+    background: transparent;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li a {
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 4vh;
+    text-transform: uppercase;
+    transition: opacity .4s ease;
+}
+header nav ul li a:hover {opacity: 0.5}
+
+/* Brand */
+section#brand {
+    padding: 5pc;
+    text-align: center;
+    height: 100vh;
+}
+section#brand h1 {
+    font-size: 8vh;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 7px 17px rgba(0,0,0,0.23);
+    cursor: default;
+}
+section#brand h1 span.username {color: #4983ff;}
+section#brand h3 {
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 7px 17px rgba(0,0,0,0.23);
+    animation: fadeIn 4s ease;
+    cursor: default;
+}
+section#brand img#githubAvatar {
+    width: 10vh;
+    border-radius: 60%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.23);
+}
+
+/* Grid */
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#grid .element {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin: 1pc 2pc 1pc 2pc;
+    padding: 2pc;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.23);
+    min-width: 20vh;
+    max-width: 30vh;
+    transition: all .4s ease;
+}
+#grid .element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.23);
+}
+
+/* Sections + footer */
+section#repos {
+    padding-top: 10pc;
+}
+footer {
+    padding: 5pc;
+    border-top: 1px solid #0000001e;
+    background-color: #00000004;
+    display: flex;
+    justify-content: center;
+}
+footer a {font-weight: bold;}
+footer .center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Repo */
+.repo_name {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.repo_detail {
+    font-size: 1.3vh;
+    margin: .5pc 0;
+    opacity: .9;
+}
+.repo_detail.repo_language {
+    font-size: 1.4vh;
+}
+.repo_detail.repo_language .repo_lang {    
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: .5pc;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
