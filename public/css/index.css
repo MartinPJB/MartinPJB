@@ -85,6 +85,7 @@ section#brand img#githubAvatar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 5pc;
 }
 #grid .element {
     display: flex;
