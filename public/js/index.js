@@ -11,11 +11,12 @@ async function getRepos(username){
         const { name, html_url, fork, description, language, owner } = element;
         const forked = fork ? `<span class="repo_detail">(<b>Forked</b>)</span>` : "";
         const lang = language != null ? language : "";
+        const desc = description != null ? description : "This repo doesn't have any description. 😶";
 
         document.getElementById("grid").innerHTML += 
         `<div class="element">
             <span class="repo_name"><a href="${html_url}">${name} ${forked}</a></span>
-            <span class="repo_detail">${description}</span>
+            <span class="repo_detail">${desc}</span>
             <span class="repo_detail repo_language"><span class="repo_lang" style="background: ${colors[lang]}"></span> ${lang}</span>
         </div>`;
 
