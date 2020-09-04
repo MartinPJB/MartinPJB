@@ -13,4 +13,3 @@ The projects I publish here are mainly ideas I have on a whim. They are mainly t
 
 - [Nitrite 🧪](https://nitrite.fr) | A french discord multipurpose bot made in nodejs. (Current repo's private.)
 - [Doky 🎉](https://cozax.github.io/Doky/) | A simple nodejs markdown documentation website made with fastify, for fastify. 🎉 ([Repo](https://github.com/Cozax/Doky/))
-- [Localanimes ✨](https://github.com/Cozax/localanimes/) | A little project to watch your animes (that you've downloaded yourselves) with a local server. ✨ ([Repo](https://github.com/Cozax/localanimes/))
