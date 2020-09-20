@@ -12,4 +12,4 @@ The projects I publish here are mainly ideas I have on a whim. They are mainly t
 ## Projects that I've been working for:
 
 - [Nitrite 🧪](https://nitrite.fr) | A french discord multipurpose bot made in nodejs. (Current repo's private.)
-- [Doky 🎉](https://cozax.github.io/Doky/) | A simple nodejs markdown documentation website made with fastify, for fastify. 🎉 ([Repo](https://github.com/Cozax/Doky/))
+- [Doky 🎉](https://cozax.github.io/Doky/) | A simple nodejs markdown documentation website made with fastify. 🎉 ([Repo](https://github.com/Cozax/Doky/))
