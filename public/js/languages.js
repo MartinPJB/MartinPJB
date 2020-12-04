@@ -1,4 +1,5 @@
 const colors = {
+    "C#": "#178600",
     "Mercury": "#ff2b2b", 
     "TypeScript": "#2b7489", 
     "PureBasic": "#5a6986", 
