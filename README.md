@@ -5,6 +5,6 @@ The projects I publish here are mainly ideas I have on a whim and they are mainl
 
 [My github pages site](https://cozax.github.io/Cozax/)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Cozax&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Cozax&layout=compact&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
 <br>
-[![Profile](https://github-readme-stats.vercel.app/api?username=Cozax&theme=dark)](https://github-readme-stats.vercel.app/api?username=Cozax)
+[![Profile](https://github-readme-stats.vercel.app/api?username=Cozax&theme=dark&hide_border=true)](https://github-readme-stats.vercel.app/api?username=Cozax)
