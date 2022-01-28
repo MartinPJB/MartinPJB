@@ -36,7 +36,7 @@ function smoothScroll(e){
 
 //Dom content loaded
 document.addEventListener("DOMContentLoaded", () => {
-    getRepos("Cozax"); //Display my repos in the page
+    getRepos("Cheeteau"); //Display my repos in the page
 
     //Smooth scrolling
     const buttons = document.querySelectorAll("button");
