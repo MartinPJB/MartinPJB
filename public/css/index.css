@@ -92,11 +92,11 @@ section#brand img#githubAvatar {
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     margin: 1pc 2pc 1pc 2pc;
-    padding: 2pc;
+    padding: 2pc 2pc 1pc;
     border-radius: 5px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.23);
-    min-width: 20vh;
-    max-width: 30vh;
+    max-width: 15vw;
+    max-height: 20vh;
     transition: all .4s ease;
 }
 #grid .element:hover {
@@ -132,8 +132,13 @@ footer .center {
     font-size: 1.3vh;
     margin: .5pc 0;
     opacity: .9;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 54px;
 }
 .repo_detail.repo_language {
+    display: flex;
+    align-items: center;
     font-size: 1.4vh;
 }
 .repo_detail.repo_language .repo_lang {    
