@@ -96,7 +96,7 @@ section#brand img#githubAvatar {
     border-radius: 5px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.23);
     max-width: 15vw;
-    max-height: 16.5vh;
+    max-height: 17.5vh;
     transition: all .4s ease;
 }
 #grid .element:hover {
