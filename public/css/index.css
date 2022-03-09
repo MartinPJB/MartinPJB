@@ -96,7 +96,7 @@ section#brand img#githubAvatar {
     border-radius: 5px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.23);
     max-width: 15vw;
-    max-height: 20vh;
+    max-height: 16.5vh;
     transition: all .4s ease;
 }
 #grid .element:hover {
@@ -134,7 +134,7 @@ footer .center {
     opacity: .9;
     text-overflow: ellipsis;
     overflow: hidden;
-    height: 54px;
+    height: 55px;
 }
 .repo_detail.repo_language {
     display: flex;
