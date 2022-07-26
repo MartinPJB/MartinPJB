@@ -1,0 +1,77 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Root & body */
+:root {
+    --mainDark: #181818;
+    --mainDarker: #111111;
+    --mainColor: #8b59ff;
+    --mainShadow: #120E16;
+    --secondaryColor: #8695F0;
+    --mainBright: #FEFEFE;
+}
+html {scroll-behavior: smooth;}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--mainShadow);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* H1 */
+h1 {
+    color: white;
+    font-size: 10vw;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: var(--mainShadow) 0px 0 50px;
+    margin: 0;
+    user-select: none;
+}
+
+h2 {
+    color: white;
+    font-size: 1vw;
+    font-family: "Poppins", sans-serif;
+    text-shadow: var(--mainShadow) 0px 0 50px;
+    margin: 0; 
+    user-select: none;
+}
+
+span#made {
+    position: absolute;
+    bottom: 2.3vh;
+    right: 3.2vw;
+    z-index: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+    animation: fadein 2.5s ease;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+
+/* Iframe */
+iframe {
+    position: absolute;
+    z-index: -1;
+    animation: fadein 2.5s ease;
+    user-select: none;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
