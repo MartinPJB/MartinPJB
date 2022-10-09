@@ -1,0 +1,113 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Root & body */
+* { outline: none; }
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bgLinks.png);
+    background-size: cover;
+}
+
+/* Card */
+section {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section > img {
+    width: 350px;
+    height: 190px;
+    object-fit: cover;
+}
+
+section h1 { 
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+section span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    opacity: .6;
+}
+
+section article { 
+    position: relative;
+    background-color: #1d1d1d; 
+    padding: 25px 0;
+    color: white;
+    margin-top: -4px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+section article::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: calc(50% - 15px);
+    top: calc(100% - 15px);
+    width: 30px;
+    height: 30px;
+    background-color: #1d1d1d; 
+}
+
+section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    overflow-y: auto;
+    max-height: 280px;
+}
+
+section ul li { transition: background-color .2s ease; }
+section ul li:hover { background-color: #ececec; }
+
+section ul li a {
+    height: 50px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+section ul li a * {
+    margin: 0;
+}
+
+section ul li a button {
+    padding: 10px 30px;
+    border: 2px solid black;
+    background: transparent;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: color .2s ease, background-color .4s ease;
+}
+section ul li a button:hover {
+    color: white;
+    background-color: black;
+}
+
+section ul li a img {
+    width: 100px;
+}
