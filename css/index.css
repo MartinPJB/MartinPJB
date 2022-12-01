@@ -17,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: var(--mainShadow);
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -25,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+body.dark { background-color: var(--mainShadow); }
 
 /* H1 */
 h1 {
@@ -34,6 +34,7 @@ h1 {
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0;
     user-select: none;
+    animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 h2 {
@@ -43,17 +44,7 @@ h2 {
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0; 
     user-select: none;
-}
-
-span#made {
-    position: absolute;
-    bottom: 2.3vh;
-    right: 3.2vw;
-    z-index: 0;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    user-select: none;
-    animation: fadein 2.5s ease;
+    animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 a, a:visited, a:hover {
@@ -70,8 +61,53 @@ iframe {
     user-select: none;
 }
 
+
+/* Buttons */
+button {
+    margin-top: 25px;
+    padding: 20px 55px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: transform .8s ease, box-shadow 1.2s ease;
+    animation: fadein 2.5s ease, comein 2.5s ease;
+}
+button:hover {
+    transform: scale(103%);
+    box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.5);
+}
+
+
+/* Pages Transition */
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    animation: loader 1s ease;
+}
+
+
+/* Animations */
 @keyframes fadein {
     0% { opacity: 0; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes comein {
+    from { transform: translateY(150px); }
+    to { transform: translateX(0); }
+}
+
+@keyframes loader {
+    from { width: 0; }
+    to { width: 100vw; }
 }
