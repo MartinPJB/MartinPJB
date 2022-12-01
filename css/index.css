@@ -25,6 +25,7 @@ body {
     align-items: center;
 }
 body.dark { background-color: var(--mainShadow); }
+body.light { background-color: var(--mainBright); }
 
 /* H1 */
 h1 {
