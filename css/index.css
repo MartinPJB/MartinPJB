@@ -96,6 +96,24 @@ button:hover {
 .loader.top { animation: loaderTop 1s ease; }
 
 
+/* Custom Mice trailer */
+body:hover > #trailer { opacity: 1; }
+#trailer {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+    mix-blend-mode: difference;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+
 /* Animations */
 @keyframes fadein {
     0% { opacity: 0; }
