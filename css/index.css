@@ -9,6 +9,7 @@
     --mainDarker: #111111;
     --mainColor: #8b59ff;
     --mainShadow: #120E16;
+    --mainShadowLighter: #1c1621;
     --secondaryColor: #8695F0;
     --mainBright: #FEFEFE;
 }
@@ -23,6 +24,9 @@ body {
 
     justify-content: center;
     align-items: center;
+
+    background-image: radial-gradient(var(--mainShadowLighter) 5px, transparent 5px);
+    background-size: 55px 55px;
 }
 body.dark { background-color: var(--mainShadow); }
 body.light { background-color: var(--mainBright); }
@@ -54,8 +58,8 @@ a, a:visited, a:hover {
 }
 
 
-/* Iframe */
-iframe {
+/* Canvas */
+canvas {
     position: absolute;
     z-index: -1;
     animation: fadein 2.5s ease;
