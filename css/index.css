@@ -24,11 +24,12 @@ body {
 
     justify-content: center;
     align-items: center;
-
+}
+body.dark { 
+    background-color: var(--mainShadow); 
     background-image: radial-gradient(var(--mainShadowLighter) 5px, transparent 5px);
     background-size: 55px 55px;
 }
-body.dark { background-color: var(--mainShadow); }
 body.light { background-color: var(--mainBright); }
 
 /* H1 */
