@@ -1,9 +1,9 @@
 // Function
-function handleRedirects(url, transition, bgColor) {
+function handleRedirects(url, transition, pageClass) {
     const departDiv = document.createElement("div");
     departDiv.classList.add("loader");
     departDiv.classList.add(transition);
-    departDiv.style.backgroundColor = bgColor;
+    departDiv.classList.add(pageClass);
 
     document.body.append(departDiv);
     setTimeout(() => {
@@ -17,9 +17,9 @@ const buttons = document.getElementsByClassName("redirecter");
 for (const button of buttons){ 
     const url = button.dataset.location;
     const transition = button.dataset.transition;
-    const bgColor = button.dataset.bgColor;
+    const pageClass = button.dataset.pageclass;
 
     button.addEventListener("click", () => {
-        handleRedirects(url, transition, bgColor);
+        handleRedirects(url, transition, pageClass);
     });
 }

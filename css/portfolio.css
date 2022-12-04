@@ -1,0 +1,55 @@
+body {
+    animation: fadein .5s ease, comein .5s ease;
+}
+
+/* HTML */
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+section article { 
+    display: flex; 
+    flex: 1;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Differentes sections */
+section#whoami article.left {
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    background-image: url(../img/avatar.png);
+    background-size: cover;
+    background-position-y: center;
+}
+
+
+/* IDs */
+button#goHome {
+    z-index: 10;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    border-radius: 60%;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+}

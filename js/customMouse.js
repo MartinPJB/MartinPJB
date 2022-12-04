@@ -7,8 +7,7 @@ document.body.append(trailer);
 function followMice(e) {
 
 	let scale = 1;
-	if (e.target.dataset.interactif == "true") {
-		console.log("interactif");
+	if (e.target.dataset.interactif == "true" || (e.target.ParentNode && e.target.ParentNode.dataset.interactif == "true")) {
 		scale = 2;
 	}
 

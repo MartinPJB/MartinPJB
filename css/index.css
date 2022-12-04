@@ -26,34 +26,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-body.dark { 
-    background-color: var(--mainShadow); 
+
+.main { 
+    background-color: var(--mainShadow) !important; 
     background-image: radial-gradient(var(--mainShadowLighter) 5px, transparent 5px);
     box-shadow: 0 0 200px rgba(0,0,0,0.5) inset;
     background-size: 55px 55px;
 }
-body.light { background-color: var(--mainBright); }
-
-/* H1 */
-h1 {
-    color: white;
-    font-size: 10vw;
-    font-family: 'Bebas Neue', cursive;
-    text-shadow: var(--mainShadow) 0px 0 50px;
-    margin: 0;
-    user-select: none;
-    animation: fadein 2.5s ease, comein 2.5s ease;
-}
-
-h2 {
-    color: white;
-    font-size: 1vw;
-    font-family: "Poppins", sans-serif;
-    text-shadow: var(--mainShadow) 0px 0 50px;
-    margin: 0; 
-    user-select: none;
-    animation: fadein 2.5s ease, comein 2.5s ease;
-}
+.portfolio { background-color: var(--mainBright) !important; }
 
 a, a:visited, a:hover {
     text-decoration: none;
@@ -82,7 +62,10 @@ button {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     transition: transform .8s ease, box-shadow 1.2s ease;
-    animation: fadein 2.5s ease, comein 2.5s ease;
+}
+button.dark {
+    color: white;
+    background-color: black;
 }
 button:hover {
     transform: scale(108%);
