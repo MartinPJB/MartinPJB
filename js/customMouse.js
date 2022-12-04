@@ -5,16 +5,23 @@ document.body.append(trailer);
 
 // Follow mouse
 function followMice(e) {
-    const x = e.clientX - trailer.offsetWidth / 2,
-          y = e.clientY - trailer.offsetHeight / 2;
-    
-    const keyframes = {
-      transform: `translate(${x}px, ${y}px)`
-    }
-    
-    trailer.animate(keyframes, { 
-      duration: 800, 
-      fill: "forwards" 
-    });
+
+	let scale = 1;
+	if (e.target.dataset.interactif == "true") {
+		console.log("interactif");
+		scale = 2;
+	}
+
+	const x = e.clientX - trailer.offsetWidth / 2,
+		y = e.clientY - trailer.offsetHeight / 2;
+
+	const keyframes = {
+		transform: `translate(${x}px, ${y}px) scale(${scale})`
+	}
+
+	trailer.animate(keyframes, {
+		duration: 800,
+		fill: "forwards"
+	});
 }
 window.onmousemove = e => followMice(e);

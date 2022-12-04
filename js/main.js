@@ -1,5 +1,12 @@
 import * as THREE from "three";
 
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { RGBShiftShader } from 'three/addons/shaders/RGBShiftShader.js';
+import { DotScreenShader } from 'three/addons/shaders/DotScreenShader.js';
+
+// Elements
 const SPEED = .01;
 const content = {
     scene: null,
@@ -7,7 +14,10 @@ const content = {
     renderer: null,
 
     cube: null,
-    outline: null
+    outline: null,
+    particles: null,
+
+    composer: null,
 }
 
 
@@ -19,7 +29,7 @@ function init() {
     content.camera.position.set(0, 3.5, 5);
     content.camera.lookAt(content.scene.position);
 
-    content.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    content.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, logarithmicDepthBuffer: true });
     content.renderer.setSize(window.innerWidth, window.innerHeight);
 
     document.body.appendChild(content.renderer.domElement);
@@ -49,6 +59,31 @@ function init() {
 
     content.scene.add(content.cube);
     content.scene.add(content.outline);
+
+    // Particules Space Dust
+    const particlesGeometry = new THREE.SphereGeometry(4, 32, 32);
+    const particlesMaterial = new THREE.PointsMaterial({
+        size: 0.02,
+        sizeAttenuation: true
+    });
+
+    content.particles = new THREE.Points(particlesGeometry, particlesMaterial);
+    content.particles.rotation.x = 15;
+    content.particles.position.z = 2;
+    content.particles.position.y = 3;
+    content.scene.add(content.particles)  ;
+
+    // PostProcessing
+    content.composer = new EffectComposer(content.renderer);
+    content.composer.addPass(new RenderPass(content.scene, content.camera));
+
+    const dotScreen = new ShaderPass(DotScreenShader);
+    dotScreen.uniforms['scale'].value = 4;
+    content.composer.addPass(dotScreen);
+
+    const rgbShift = new ShaderPass(RGBShiftShader);
+    rgbShift.uniforms['amount'].value = 0.0015;
+    content.composer.addPass(rgbShift);
 }
 
 
@@ -63,7 +98,10 @@ function render() {
     content.outline.rotation.y += SPEED * 2;
     content.outline.rotation.z += SPEED * 2;
 
+    content.particles.rotation.y += SPEED / 4;
+
     content.renderer.render(content.scene, content.camera);
+    content.composer.render();
 }
 
 init();

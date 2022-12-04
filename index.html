@@ -15,18 +15,19 @@
     <script type="importmap">
     {
         "imports": {
-        "three": "https://unpkg.com/three@0.146.0/build/three.module.js"
+            "three": "./threejs/three.module.js",
+            "three/addons/": "./threejs/jsm/"
         }
     }
     </script>
 
-    <script src="./js/index.js" defer type="module"></script>
+    <script src="./js/main.js" defer type="module"></script>
     <script src="./js/handleRedirects.js" defer async></script>
     <script src="./js/customMouse.js" defer async></script>
 </head>
 <body class="dark">
+    <h2>Hi! My name is</h2>
     <h1>Martin B.</h1>
-    <h2>French web developer and student who likes learning new things.</h2>
-    <button class="redirecter" data-transition="top" data-bgColor="white" data-location="./portfolio.html">View More</button>
+    <button class="redirecter" data-interactif="true" data-transition="top" data-bgColor="white" data-location="./portfolio.html">View More</button>
 </body>
 </html>
