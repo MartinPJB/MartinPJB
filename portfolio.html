@@ -5,25 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin B. | Portfolio</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
 
+    <!-- Fichiers styles necessaires -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <link rel="stylesheet" href="./css/pages/portfolio.css">
 
-    <script src="./js/portfolio.js" defer async></script>
-    <script src="./js/handleRedirects.js" defer async></script>
-    <script src="./js/customMouse.js" defer async></script>
+    <link rel="stylesheet" href="./css/util/trailer.css">
+    <link rel="stylesheet" href="./css/util/pageTransition.css">
+
+
+    <!-- Fichiers scripts necessaires -->
+    <script src="./js/pages/portfolio.js" defer async></script>
+    <script src="./js/util/trailer.js" defer async></script>
+    <script src="./js/util/pageTransition.js" defer async></script>
 </head>
+
 <body class="portfolio">
+
+    <!-- Bouton de redirection vers la page d'accueil -->
     <button id="goHome" class="redirecter dark" data-interactif="true" data-transition="side" data-pageclass="main" data-location="./"><i class="zmdi zmdi-chevron-left"></i></button>
+
+    <!-- Le reste de notre page -->
     <main>
+
+        <!-- 
+            Chaque sections dessous servira d'étape dans le portfolio (Qui suis-je -> Mes passions -> Mes compétences -> Mes projets)
+            Ces sections seront divisées en deux parties: une partie gauche et une partie droite.
+            Chaque partie sera utilisée dans le but de soit afficher un texte ou d'autres choses pertinentes, soit afficher une image.
+        -->
         <section id="whoami">
             <article class="left">
             </article>
+
             <article class="right">
                 <h1>🚧</h1>
-                <span>Being programmed.</span>
+                <h1>C'est en travaux!</h1>
             </article>
         </section>
     </main>

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
-/* Root & body */
+/* Body */
 * { outline: none; }
 body {
     display: flex;
@@ -14,37 +14,35 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/bgLinks.png);
+    background-image: url(../img/background.png);
     background-size: cover;
 }
 
+
 /* Card */
-section {
+.card {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
 }
 
-section > img {
-    width: 350px;
-    height: 190px;
-    object-fit: cover;
-}
 
-section h1 { 
+/* Card elements */
+.card h1 { 
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     margin: 0;
     margin-bottom: 10px;
 }
-section span {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
-    opacity: .6;
+
+
+.card > img {
+    width: 350px;
+    height: 190px;
+    object-fit: cover;
 }
 
-section article { 
+.card section.informations { 
     position: relative;
     background-color: #1d1d1d; 
     padding: 25px 0;
@@ -53,7 +51,7 @@ section article {
     margin-bottom: 50px;
     text-align: center;
 }
-section article::after {
+.card section.informations::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -65,19 +63,29 @@ section article::after {
     background-color: #1d1d1d; 
 }
 
-section ul {
+.card span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    opacity: .6;
+}
+
+.card ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-
     overflow-y: auto;
     max-height: 280px;
 }
 
-section ul li { transition: background-color .2s ease; }
-section ul li:hover { background-color: #ececec; }
+.card ul li { 
+    transition: background-color .2s ease;
+}
+.card ul li:hover { 
+    background-color: #ececec; 
+}
 
-section ul li a {
+.card ul li a {
     height: 50px;
     padding: 10px 0;
     width: 100%;
@@ -87,12 +95,11 @@ section ul li a {
     align-items: center;
     text-decoration: none;
 }
-
-section ul li a * {
+.card ul li a * {
     margin: 0;
 }
 
-section ul li a button {
+.card ul li a button {
     padding: 10px 30px;
     border: 2px solid black;
     background: transparent;
@@ -103,11 +110,11 @@ section ul li a button {
     margin-left: 50px;
     transition: color .2s ease, background-color .4s ease;
 }
-section ul li a button:hover {
+.card ul li a button:hover {
     color: white;
     background-color: black;
 }
 
-section ul li a img {
+.card ul li a img {
     width: 100px;
 }

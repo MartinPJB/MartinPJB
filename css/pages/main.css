@@ -1,4 +1,10 @@
-/* H1 */
+/**
+    Ce fichier CSS contient le style pour la page d'accueil (index.html).
+**/
+button {
+    animation: fadein 2.5s ease, comein 2.5s ease;
+}
+
 h1 {
     color: white;
     font-size: 10vw;
@@ -16,10 +22,5 @@ h2 {
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0; 
     user-select: none;
-    animation: fadein 2.5s ease, comein 2.5s ease;
-}
-
-/* Button */
-button {
     animation: fadein 2.5s ease, comein 2.5s ease;
 }

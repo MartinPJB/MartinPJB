@@ -1,8 +1,11 @@
+/**
+    Ce fichier CSS contient le style pour le portfolio (portfolio.html).
+**/
+/* HTML */
 body {
     animation: fadein .5s ease, comein .5s ease;
 }
 
-/* HTML */
 main {
     display: flex;
     width: 100vw;
@@ -24,6 +27,7 @@ section {
     min-height: 100vh;
     display: flex;
 }
+
 section article { 
     display: flex; 
     flex: 1;
@@ -32,7 +36,7 @@ section article {
 }
 
 
-/* Differentes sections */
+/* Styles propres aux sections */
 section#whoami article.left {
     box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
     background-image: url(../img/avatar.png);
@@ -41,8 +45,8 @@ section#whoami article.left {
 }
 
 
-/* IDs */
-button#goHome {
+/* Bouton du retour d'accueil */
+#goHome {
     z-index: 10;
     font-size: 30px;
     position: fixed;
