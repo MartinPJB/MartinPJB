@@ -7,8 +7,10 @@ button {
 
 h1 {
     color: white;
-    font-size: 10vw;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 10rem;
+    font-family: 'Syncopate', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0;
     user-select: none;
@@ -17,10 +19,24 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 1vw;
+    font-size: 1.3em;
     font-family: "Poppins", sans-serif;
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0; 
     user-select: none;
     animation: fadein 2.5s ease, comein 2.5s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 15vw;
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 5vw;
+        margin-bottom: 2vh;
+    }
 }

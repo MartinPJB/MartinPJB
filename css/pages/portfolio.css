@@ -38,13 +38,13 @@ section article {
 
 section article h1.sectionTitle {
     font-family: 'Bebas Neue', cursive;
-    font-size: 10vw;
+    font-size: 10rem;
     margin: 0;
 }
 
 section article p.sectionDescription {
     margin: 0;
-    font-size: 1.5vw;
+    font-size: 1.8rem;
     padding: 0;
 }
 
@@ -57,12 +57,13 @@ section#whoami::before {
     left: 0;
     z-index: 1;
     background-image: url(../../img/bretagne.png);
-    background-size: contain;
+    background-size: cover;
     background-position-y: bottom;
-    background-position-x: right;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    min-height: 630px;
+    animation: fadein 1.5s ease, comein 1.5s ease;
 }
 
 section#whoami article.left {
@@ -84,4 +85,37 @@ section#whoami article.left {
     width: 70px;
     height: 70px;
     padding: 0;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    #goHome {
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section article {
+        overflow-y: scroll;
+    }
+
+    section article h1.sectionTitle {
+        font-size: 22vw;
+        text-align: center;
+    }
+
+    section article p.sectionDescription {
+        font-size: 25px;
+        max-width: 100%;
+        margin-top: 2vh;
+        padding: 0 10px;
+    }
+
+    section::before {
+        display: none;
+    }
 }

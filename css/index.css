@@ -1,8 +1,17 @@
 /* Fonts */
+/* Liste: 
+    Montserrat: https://fonts.google.com/specimen/Montserrat
+    Poppins: https://fonts.google.com/specimen/Poppins
+    Bebas Neue: https://fonts.google.com/specimen/Bebas+Neue
+    Lobster: https://fonts.google.com/specimen/Lobster
+    Syncopate: https://fonts.google.com/specimen/Syncopate
+*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+
 
 
 /* Root & Universel */

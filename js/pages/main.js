@@ -110,6 +110,16 @@ function render() {
     // Rendu de la scène
     content.renderer.render(content.scene, content.camera);
     content.composer.render();
+
+    // Redimensionnement de la fenêtre
+    window.addEventListener('resize', onWindowResize, false);
+}
+
+// Appelé à chaque redimensionnement de la fenêtre
+function onWindowResize() {
+    content.camera.aspect = window.innerWidth / window.innerHeight;
+    content.camera.updateProjectionMatrix();
+    content.renderer.setSize(window.innerWidth, window.innerHeight);
 }
 init();
 render();
