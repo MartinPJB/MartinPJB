@@ -144,7 +144,7 @@ section#whoami article.left {
         padding: 0 10px;
     }
 
-    section::before {
+    section article::before {
         display: none;
     }
 
