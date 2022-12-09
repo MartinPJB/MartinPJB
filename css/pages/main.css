@@ -2,7 +2,8 @@
     Ce fichier CSS contient le style pour la page d'accueil (index.html).
 **/
 button {
-    animation: fadein 2.5s ease, comein 2.5s ease;
+    -webkit-animation: fadein 2.5s ease, comein 2.5s ease;
+            animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 h1 {
@@ -13,8 +14,12 @@ h1 {
     font-weight: bold;
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0;
-    user-select: none;
-    animation: fadein 2.5s ease, comein 2.5s ease;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-animation: fadein 2.5s ease, comein 2.5s ease;
+            animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 h2 {
@@ -23,9 +28,25 @@ h2 {
     font-family: "Poppins", sans-serif;
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0; 
-    user-select: none;
-    animation: fadein 2.5s ease, comein 2.5s ease;
+    -webkit-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+    -webkit-animation: fadein 2.5s ease, comein 2.5s ease;
+            animation: fadein 2.5s ease, comein 2.5s ease;
 }
+
+canvas {
+    position: absolute;
+    z-index: -1;
+    -webkit-animation: fadein 2.5s ease;
+            animation: fadein 2.5s ease;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 800px) {

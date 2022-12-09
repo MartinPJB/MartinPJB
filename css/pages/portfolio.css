@@ -3,21 +3,23 @@
 **/
 /* HTML */
 body {
-    animation: fadein .5s ease, comein .5s ease;
+    -webkit-animation: fadein .5s ease, comein .5s ease;
+            animation: fadein .5s ease, comein .5s ease;
     overflow: hidden;
 }
 
 main {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: row;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-snap-points-y: repeat(100vh);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    -ms-scroll-snap-points-y: repeat(100vh);
+        scroll-snap-points-y: repeat(100vh);
     scroll-behavior: smooth;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 section {
@@ -27,13 +29,22 @@ section {
     height: 100vh;
     min-width: 100vw;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 section article { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex; 
-    flex: 1;
-    flex-direction: column;
+    -webkit-box-flex: 1; 
+        -ms-flex: 1; 
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: "Poppins", sans-serif;
     padding: 4vh 3vw;
 }
@@ -66,11 +77,13 @@ section#whoami::before {
     height: 100%;
     background-repeat: no-repeat;
     min-height: 630px;
-    animation: fadein 1.5s ease, comein 1.5s ease;
+    -webkit-animation: fadein 1.5s ease, comein 1.5s ease;
+            animation: fadein 1.5s ease, comein 1.5s ease;
 }
 
 section#whoami article.left {
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    -webkit-box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+            box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
     background-image: url(../img/avatar.png);
     background-size: cover;
     background-position-y: center;
@@ -95,11 +108,16 @@ section#whoami article.left {
 @media screen and (max-width: 800px) {
     #goHome {
         left: 50%;
-        transform: translateX(-50%) rotate(90deg);
+        -webkit-transform: translateX(-50%) rotate(90deg);
+            -ms-transform: translateX(-50%) rotate(90deg);
+                transform: translateX(-50%) rotate(90deg);
     }
 
     section {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     section article {
