@@ -1,8 +1,5 @@
-<p align="center">
-  <img width="660" height="400" src="https://raw.githubusercontent.com/Cheeteau/Cheeteau/master/img/github/introducing.png">
-</p>
-
-But you can also call me `Martin`. I am a French student born in 2004 and living in Alsace. I am currently studying web development and a lot of other things so I can maybe become a fullstack web developer.
+# Hey 👋
+I'm `Martin`. I am a French student born in 2004 and living in Alsace. I am currently studying web development and a lot of other things so I can maybe become a fullstack web developer.
 
 ## My interests:
 - Computer Science 💻
@@ -27,6 +24,6 @@ But you can also call me `Martin`. I am a French student born in 2004 and living
 ****
 If you want to take a look to my projects, feel free to browse through my github!
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Cheeteau&layout=compact&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MartinPJB&layout=compact&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
 <br>
-[![Profile](https://github-readme-stats.vercel.app/api?username=Cheeteau&theme=dark&hide_border=true)](https://github-readme-stats.vercel.app/api?username=Cheeteau)
+[![Profile](https://github-readme-stats.vercel.app/api?username=MartinPJB&theme=dark&hide_border=true)](https://github-readme-stats.vercel.app/api?username=Cheeteau)
