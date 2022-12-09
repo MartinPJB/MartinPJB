@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: "Poppins", sans-serif;
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0; 

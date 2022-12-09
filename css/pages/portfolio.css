@@ -67,7 +67,10 @@ section article .sectionDescription {
 
 
 /* Styles propres aux sections */
-section#whoami::before {
+section#whoami article.right {
+    position: relative;
+}
+section#whoami article.right::before {
     content: "";
     position: absolute;
     top: 0;
@@ -75,9 +78,9 @@ section#whoami::before {
     z-index: 1;
     background-image: url(../../img/bretagne.png);
     background-size: cover;
-    background-position-y: -7pc;
     width: 100%;
     height: 100%;
+    background-position-x: right;
     background-repeat: no-repeat;
     min-height: 630px;
     -webkit-animation: fadein 1.5s ease, comein 1.5s ease;
@@ -143,5 +146,11 @@ section#whoami article.left {
 
     section::before {
         display: none;
+    }
+
+    /* Whoami */
+    section#whoami article.left {
+        background-position-y: center;
+        flex: 1;
     }
 }
