@@ -34,7 +34,7 @@ function init() {
 
     content.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, logarithmicDepthBuffer: true });
     content.renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(content.renderer.domElement);
+    document.body.getElementsByTagName("main")[0].appendChild(content.renderer.domElement);
 
 
     // Une lumière

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin B. | Portfolio</title>
     <link rel="icon" type="image/png" href="./img/icon.png">
@@ -22,13 +23,13 @@
     <script src="./js/util/pageTransition.js" defer async></script>
 </head>
 
-<body class="portfolio">
+<body>
 
     <!-- Bouton de redirection vers la page d'accueil -->
     <button id="goHome" class="redirecter dark" data-interactif="true" data-transition="side" data-pageclass="main" data-location="./"><i class="zmdi zmdi-chevron-left"></i></button>
 
     <!-- Le reste de notre page -->
-    <main>
+    <main class="portfolio">
 
         <!-- 
             Chaque sections dessous servira d'étape dans le portfolio (Qui suis-je -> Mes passions -> Mes compétences -> Mes projets)
@@ -40,10 +41,22 @@
             </article>
 
             <article class="right">
-                <h1 class="sectionTitle">Qui suis-je?</h1>
-                <p class="sectionDescription">
+                <span class="sectionTitle">Qui suis-je?</span>
+                <span class="sectionDescription">
                     Je suis un développeur web originaire de Bretagne, j'y ai passé la majorité de mon enfance, de la CP à la terminale.
                     Je suis désormais titulaire d'un bac général mention bien, et étudiant en BUT MMI en Alsace. 
+                </span>
+            </article>
+        </section>
+
+        <section>
+            <article class="left">
+            </article>
+
+            <article class="right">
+                <h1 class="sectionTitle">AutreChose</h1>
+                <p class="sectionDescription">
+                    ??? 
                 </p>
             </article>
         </section>

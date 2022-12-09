@@ -4,6 +4,7 @@
 /* HTML */
 body {
     animation: fadein .5s ease, comein .5s ease;
+    overflow: hidden;
 }
 
 main {
@@ -16,6 +17,7 @@ main {
     scroll-snap-type: x mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-behavior: smooth;
+    flex-wrap: wrap;
 }
 
 section {
@@ -36,15 +38,16 @@ section article {
     padding: 4vh 3vw;
 }
 
-section article h1.sectionTitle {
+section article .sectionTitle {
     font-family: 'Bebas Neue', cursive;
     font-size: 10rem;
+    font-weight: bold;
     margin: 0;
 }
 
-section article p.sectionDescription {
+section article .sectionDescription {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.5vw;
     padding: 0;
 }
 
@@ -103,15 +106,16 @@ section#whoami article.left {
         overflow-y: scroll;
     }
 
-    section article h1.sectionTitle {
+    section article .sectionTitle {
         font-size: 22vw;
         text-align: center;
     }
 
-    section article p.sectionDescription {
+    section article .sectionDescription {
         font-size: 25px;
         max-width: 100%;
         margin-top: 2vh;
+        margin-bottom: 5vh;
         padding: 0 10px;
     }
 

@@ -21,7 +21,7 @@ body:hover > #trailer { opacity: 1; }
 }
 
 /* Responsive */
-@media screen and (max-width: 800px) {
+@media (pointer:none), (pointer:coarse) {
     #trailer {
         display: none;
     }
