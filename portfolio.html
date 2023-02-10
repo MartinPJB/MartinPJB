@@ -1,71 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <title>Martin B. | Portfolio</title>
-    <link rel="icon" type="image/png" href="./img/icon.png">
-
-    <!-- Fichiers styles necessaires -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/pages/portfolio.css">
-
-    <link rel="stylesheet" href="./css/util/trailer.css">
-    <link rel="stylesheet" href="./css/util/pageTransition.css">
-
-
-    <!-- Fichiers scripts necessaires -->
-    <script src="./js/pages/portfolio.js" defer async></script>
-    <script src="./js/util/trailer.js" defer async></script>
-    <script src="./js/util/pageTransition.js" defer async></script>
-</head>
-
-<body>
-
-    <!-- Bouton de redirection vers la page d'accueil -->
-    <button id="goHome" class="redirecter dark" data-interactif="true" data-transition="side" data-pageclass="main"
-        data-location="./"><i class="zmdi zmdi-chevron-left"></i></button>
-
-    <!-- Le reste de notre page -->
-    <main class="portfolio">
-
-        <!-- 
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <title>Martin B. | Portfolio</title>
+        <link rel="icon" type="image/png" href="./img/icon.png">
+        <!-- Fichiers styles necessaires -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/pages/portfolio.css">
+        <link rel="stylesheet" href="./css/util/trailer.css">
+        <link rel="stylesheet" href="./css/util/pageTransition.css">
+        <!-- Fichiers scripts necessaires -->
+        <script src="./js/pages/portfolio.js" defer async></script>
+        <script src="./js/util/trailer.js" defer async></script>
+        <script src="./js/util/pageTransition.js" defer async></script>
+    </head>
+    <body>
+        <!-- Bouton de redirection vers la page d'accueil -->
+        <button
+            id="goHome"
+            class="redirecter dark"
+            data-interactif="true"
+            data-transition="side"
+            data-pageclass="main"
+            data-location="./"
+        >
+            <i class="zmdi zmdi-chevron-left"></i>
+        </button>
+        <!-- Le reste de notre page -->
+        <main class="portfolio">
+            <!-- 
             Chaque sections dessous servira d'étape dans le portfolio (Qui suis-je -> Mes passions -> Mes compétences -> Mes projets)
             Ces sections seront divisées en deux parties: une partie gauche et une partie droite.
             Chaque partie sera utilisée dans le but de soit afficher un texte ou d'autres choses pertinentes, soit afficher une image.
         -->
-        <section id="whoami">
-            <article class="left">
-            </article>
-
-            <article class="right">
-                <span class="sectionTitle">Qui suis-je?</span>
-                <span class="sectionDescription">
-                    Bonjour! Je m'appelle Martin et je suis originaire de Bretagne. J'y ai passé la majeure partie de mon
-                    enfance, du CP à la terminale, où j'y ai obtenu mon bac mention bien. J'ai ensuite déménagé en
-                    Alsace pour poursuivre mes études en BUT MMI.
-                </span>
-            </article>
-        </section>
-
-        <section>
-            <article class="left">
-            </article>
-
-            <article class="right">
-                <h1 class="sectionTitle">AutreChose</h1>
-                <p class="sectionDescription">
-                    ???
-                </p>
-            </article>
-        </section>
-    </main>
-</body>
-
+            <section id="whoami">
+                <article class="left"></article>
+                <article class="right">
+                    <span class="sectionTitle">Qui suis-je?</span>
+                    <p class="sectionDescription">Bonjour! Je m'appelle Martin et je suis originaire de Bretagne. J'y ai passé la majeure partie de mon enfance, du CP à la terminale, où j'y ai obtenu mon bac mention bien. J'ai ensuite déménagé en Alsace pour poursuivre mes études en BUT MMI.</p>
+                </article>
+            </section>
+            <section>
+                <article class="left"></article>
+                <article class="right">
+                    <h1 class="sectionTitle">AutreChose</h1>
+                    <p class="sectionDescription">
+                        ???
+                    </p>
+                </article>
+            </section>
+        </main>
+    </body>
 </html>

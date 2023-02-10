@@ -4,25 +4,25 @@
 /* HTML */
 body {
     -webkit-animation: fadein .5s ease, comein .5s ease;
-            animation: fadein .5s ease, comein .5s ease;
+    animation: fadein .5s ease, comein .5s ease;
     overflow: hidden;
 }
 
 main {
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex; 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
     -ms-scroll-snap-points-y: repeat(100vh);
-        scroll-snap-points-y: repeat(100vh);
+    scroll-snap-points-y: repeat(100vh);
     scroll-behavior: smooth;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 section {
@@ -37,17 +37,17 @@ section {
     display: flex;
 }
 
-section article { 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex; 
-    -webkit-box-flex: 1; 
-        -ms-flex: 1; 
-            flex: 1;
+section article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     font-family: "Poppins", sans-serif;
     padding: 4vh 3vw;
 }
@@ -70,6 +70,7 @@ section article .sectionDescription {
 section#whoami article.right {
     position: relative;
 }
+
 section#whoami article.right::before {
     content: "";
     position: absolute;
@@ -84,12 +85,12 @@ section#whoami article.right::before {
     background-repeat: no-repeat;
     min-height: 630px;
     -webkit-animation: fadein 1.5s ease, comein 1.5s ease;
-            animation: fadein 1.5s ease, comein 1.5s ease;
+    animation: fadein 1.5s ease, comein 1.5s ease;
 }
 
 section#whoami article.left {
-    -webkit-box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
-            box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
     background-image: url(../../img/moa_soph.png);
     background-size: cover;
     background-position-y: bottom;
@@ -116,15 +117,15 @@ section#whoami article.left {
     #goHome {
         left: 50%;
         -webkit-transform: translateX(-50%) rotate(90deg);
-            -ms-transform: translateX(-50%) rotate(90deg);
-                transform: translateX(-50%) rotate(90deg);
+        -ms-transform: translateX(-50%) rotate(90deg);
+        transform: translateX(-50%) rotate(90deg);
     }
 
     section {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     section article {

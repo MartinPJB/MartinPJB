@@ -11,24 +11,55 @@
     width: 100vw;
     background-color: white;
 }
-.loader.side { -webkit-animation: loaderSide 1s ease; animation: loaderSide 1s ease; }
-.loader.top { -webkit-animation: loaderTop 1s ease; animation: loaderTop 1s ease; }
+
+.loader.side {
+    -webkit-animation: loaderSide 1s ease;
+    animation: loaderSide 1s ease;
+}
+
+.loader.top {
+    -webkit-animation: loaderTop 1s ease;
+    animation: loaderTop 1s ease;
+}
 
 
 /* Animations */
 @-webkit-keyframes loaderSide {
-    from { width: 0; }
-    to { width: 100vw; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100vw;
+    }
 }
+
 @keyframes loaderSide {
-    from { width: 0; }
-    to { width: 100vw; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100vw;
+    }
 }
+
 @-webkit-keyframes loaderTop {
-    from { height: 0; }
-    to { height: 100vh; }
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100vh;
+    }
 }
+
 @keyframes loaderTop {
-    from { height: 0; }
-    to { height: 100vh; }
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100vh;
+    }
 }

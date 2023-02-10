@@ -3,7 +3,7 @@
 **/
 button {
     -webkit-animation: fadein 2.5s ease, comein 2.5s ease;
-            animation: fadein 2.5s ease, comein 2.5s ease;
+    animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 h1 {
@@ -15,11 +15,11 @@ h1 {
     text-shadow: var(--mainShadow) 0px 0 50px;
     margin: 0;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     -webkit-animation: fadein 2.5s ease, comein 2.5s ease;
-            animation: fadein 2.5s ease, comein 2.5s ease;
+    animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 h2 {
@@ -27,24 +27,29 @@ h2 {
     font-size: 1em;
     font-family: "Poppins", sans-serif;
     text-shadow: var(--mainShadow) 0px 0 50px;
-    margin: 0; 
-    -webkit-user-select: none; 
-       -moz-user-select: none; 
-        -ms-user-select: none; 
-            user-select: none;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     -webkit-animation: fadein 2.5s ease, comein 2.5s ease;
-            animation: fadein 2.5s ease, comein 2.5s ease;
+    animation: fadein 2.5s ease, comein 2.5s ease;
 }
 
 canvas {
     position: absolute;
     z-index: -1;
+    transition: opacity .5s ease;
+    animation: fadein 2.5s ease;
     -webkit-animation: fadein 2.5s ease;
-            animation: fadein 2.5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 

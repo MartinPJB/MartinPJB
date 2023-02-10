@@ -1,6 +1,6 @@
 /*
-    Ce fichier JS contient le script pour le "cursor trailer" qui suit la souris.
-    Il est également stylisé dans le fichier "trailer.css" qui se trouve dans le dossier "css/util".
+	Ce fichier JS contient le script pour le "cursor trailer" qui suit la souris.
+	Il est également stylisé dans le fichier "trailer.css" qui se trouve dans le dossier "css/util".
 */
 const trailer = document.createElement("div");
 trailer.id = "trailer";
@@ -32,7 +32,7 @@ function followMice(e) {
 
 	// Anime enfin le trailer
 	trailer.animate(keyframes, {
-		duration: 800,
+		duration: 400,
 		fill: "forwards"
 	});
 }

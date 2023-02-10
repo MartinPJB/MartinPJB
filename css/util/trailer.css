@@ -2,7 +2,9 @@
     Ce fichier CSS contient le style pour le "cursor trailer" qui suit la souris.
     Il est également initié et mis à jour dans le fichier "trailer.js" qui se trouve dans le dossier "js/util".
 **/
-body:hover > #trailer { opacity: 1; }
+body:hover>#trailer {
+    opacity: 1;
+}
 
 #trailer {
     display: block;
@@ -23,7 +25,8 @@ body:hover > #trailer { opacity: 1; }
 }
 
 /* Responsive */
-@media (pointer:none), (pointer:coarse) {
+@media (pointer:none),
+(pointer:coarse) {
     #trailer {
         display: none;
     }

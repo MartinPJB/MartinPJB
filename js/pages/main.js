@@ -46,8 +46,8 @@ function init() {
 
     // Ajoute un cube
     const loader = new THREE.TextureLoader();
-    const material = new THREE.MeshBasicMaterial({ 
-        color: 0x000000, 
+    const material = new THREE.MeshBasicMaterial({
+        color: 0x000000,
         // map: loader.load('./img/cubel.png'),
     });
 
@@ -75,7 +75,7 @@ function init() {
     content.particles.rotation.x = 15;
     content.particles.position.z = 2;
     content.particles.position.y = 3;
-    content.scene.add(content.particles)  ;
+    content.scene.add(content.particles);
 
     // PostProcessing
     content.composer = new EffectComposer(content.renderer);
