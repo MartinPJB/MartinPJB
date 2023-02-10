@@ -35,6 +35,29 @@ header ul li {
 header ul li i {
     color: white;
     font-size: 2rem;
+    transition: transform .5s ease, opacity .5s ease;
+    -webkit-transition: transform .5s ease, opacity .5s ease;
+    -moz-transition: transform .5s ease, opacity .5s ease;
+    -ms-transition: transform .5s ease, opacity .5s ease;
+    -o-transition: transform .5s ease, opacity .5s ease;
+}
+
+header ul:hover li i {
+    opacity: .2;
+    transform: scale(.85);
+    -webkit-transform: scale(.85);
+    -moz-transform: scale(.85);
+    -ms-transform: scale(.85);
+    -o-transform: scale(.85);
+}
+
+header ul li:hover i {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 main {

@@ -17,7 +17,7 @@ function followMice(e) {
 	let scale = 1;
 
 	// Si l'élément suivant est défini comme "interactif" dans le HTML, la taille du trailer est augmentée
-	if (e.target.dataset.interactif == "true" || (e.target.ParentNode && e.target.ParentNode.dataset.interactif == "true")) {
+	if (e.target.dataset.interactif == "true" || (e.target.parentElement && e.target.parentElement.dataset.interactif == "true")) {
 		scale = 2;
 	}
 
