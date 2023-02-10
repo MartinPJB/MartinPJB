@@ -9,7 +9,7 @@
         <title>Martin B. | Portfolio</title>
         <link rel="icon" type="image/png" href="./img/icon.png">
         <!-- Fichiers styles necessaires -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/pages/portfolio.css">
         <link rel="stylesheet" href="./css/util/trailer.css">
@@ -20,17 +20,22 @@
         <script src="./js/util/pageTransition.js" defer async></script>
     </head>
     <body>
-        <!-- Bouton de redirection vers la page d'accueil -->
-        <button
-            id="goHome"
-            class="redirecter dark"
-            data-interactif="true"
-            data-transition="side"
-            data-pageclass="main"
-            data-location="./"
-        >
-            <i class="zmdi zmdi-chevron-left"></i>
-        </button>
+        <!-- Le header pour naviguer -->
+        <header>
+            <nav aria-label="Navigation sur la page portfolio">
+                <ul>
+                    <li
+                        class="redirecter dark"
+                        data-interactif="true"
+                        data-transition="side"
+                        data-pageclass="main"
+                        data-location="./"
+                    >
+                        <i class="bi bi-house-fill"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <!-- Le reste de notre page -->
         <main class="portfolio">
             <!-- 
@@ -45,10 +50,9 @@
                     <p class="sectionDescription">Bonjour! Je m'appelle Martin et je suis originaire de Bretagne. J'y ai passé la majeure partie de mon enfance, du CP à la terminale, où j'y ai obtenu mon bac mention bien. J'ai ensuite déménagé en Alsace pour poursuivre mes études en BUT MMI.</p>
                 </article>
             </section>
-            <section>
-                <article class="left"></article>
-                <article class="right">
-                    <h1 class="sectionTitle">AutreChose</h1>
+            <section id="projects">
+                <article>
+                    <h1 class="sectionTitle">Mes projets</h1>
                     <p class="sectionDescription">
                         ???
                     </p>
