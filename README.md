@@ -20,7 +20,7 @@ I am planning to acquire skills and experience in the field of web development v
 ### Tools, Languages and Frameworks I use:
   
   <img src="https://skillicons.dev/icons?i=git,github,vercel,wordpress,vscode,electron" alt="tools logos" /><br><br>
-  <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,nuxtjs,php,mysql,python" alt="languages logos" /><br><br>
+  <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,nuxtjs,php,mysql,python,rust" alt="languages logos" /><br><br>
   <img src="https://skillicons.dev/icons?i=ps,ai,figma,discord" alt="softwares logos" />
 
 <h2></h2>
