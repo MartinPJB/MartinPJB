@@ -19,9 +19,11 @@ I am planning to acquire skills and experience in the field of web development v
 
 ### Tools, Languages and Frameworks I use:
   
-  <img src="https://skillicons.dev/icons?i=git,github,vercel,wordpress,vscode,electron" alt="tools logos" /><br><br>
+  <img src="https://skillicons.dev/icons?i=git,github,vercel,wordpress,vscode,electron,bots" alt="tools logos" /><br><br>
   <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,deno,nuxtjs,php,mysql,python,rust" alt="languages logos" /><br><br>
   <img src="https://skillicons.dev/icons?i=ps,ai,figma,discord" alt="softwares logos" />
+
+*But I also do maintenance and development of sites and drupal modules!*
 
 <h2></h2>
 
