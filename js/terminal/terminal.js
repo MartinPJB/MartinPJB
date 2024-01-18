@@ -36,6 +36,8 @@ class Terminal {
 
     // Sets the input
     this.input = input;
+    document.addEventListener('click', () => this.input.focus());
+    this.input.addEventListener('blur', () => this.input.focus());
 
     li.appendChild(input);
   }

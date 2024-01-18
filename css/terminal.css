@@ -111,6 +111,17 @@ body::after {
   color: white;
   font-size: 1rem;
   font-family: Courier, monospace;
+  caret-shape: block;
+}
+
+.terminal-argument {
+  opacity: .8;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.terminal-argument .required {
+  color: red;
 }
 
 /* HTML */
