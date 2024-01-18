@@ -1,5 +1,5 @@
 # Hello! 👋
-My name is `Martin`, and I am currently studying web development and lots of others things in **Alsace** <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" width="13"/> in order to eventually become a **Full Stack Web Developer**.
+My name is `Martin`, and I am currently studying web development and lots of others things in **Alsace** <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" width="13"/> in order to eventually become a **Back End Web Developer**.
 
 <h2></h2>
 
