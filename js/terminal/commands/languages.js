@@ -21,10 +21,10 @@ export default {
       },
     };
 
-    terminal.printLn('Here are the languages I speak:');
+    terminal.printLn('Here are the languages I speak:', true);
     for (const language in languages) {
-      terminal.printLn(`- ${language} (${languages[language].level})`);
-      terminal.printLn(`  ${languages[language].comment}`);
+      terminal.printLn(`- ${language} (${languages[language].level})`, true);
+      terminal.printLn(`  ${languages[language].comment}`, true);
     }
   }
 }

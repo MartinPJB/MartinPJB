@@ -9,9 +9,9 @@ export default {
       'martin.bronnimann.pj@gmail.com': 'mailto:martin.bronnimann.pj@gmail.com'
     };
 
-    terminal.printLn('Here are my socials:');
+    terminal.printLn('Here are my socials:', true);
     for (const [name, url] of Object.entries(socials)) {
-      terminal.printLn(`- <a href="${url}" target="_blank">${name}</a>`);
+      terminal.printLn(`- <a href="${url}" target="_blank">${name}</a>`, true);
     }
   }
 }

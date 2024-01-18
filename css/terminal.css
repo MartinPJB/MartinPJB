@@ -1,3 +1,13 @@
+::-moz-selection {
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +26,7 @@ body {
   background-size: cover;
   background-image: radial-gradient(#231d2c, #0e0416);
   color: white;
+  font-size: 14px;
 }
 
 /* Analog lines */
@@ -65,16 +76,50 @@ body::after {
 }
 
 .terminal-ul li {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Courier, monospace;
   white-space: pre;
   padding-left: 1em;
   text-indent: -1.5em;
+
+  padding-right: 1rem;
+  text-wrap: balance;
+}
+.terminal-ul li.no-mb {
+  text-indent: -.3rem;
 }
 .terminal-ul li:not(.no-mb) {
-  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.terminal-ul li.no-mb::before {
+  content: '';
+  padding-right: 5px;
 }
 
 .terminal-ul li:before {
   content: '$ ';
   padding-right: 5px;
+}
+
+.terminal-input {
+  width: 99%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-family: Courier, monospace;
+}
+
+/* HTML */
+a, a:visited {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  background-color: white;
+  color: black;
 }

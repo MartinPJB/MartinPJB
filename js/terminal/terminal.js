@@ -59,7 +59,7 @@ class Terminal {
 ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝     ╚════╝ ╚═════╝
 Version 1.0.0 (1/18/2024 - ${ymd.m}/${ymd.d}/${ymd.y})
 
-Welcome to my terminal! Type 'help' to see the available commands.`);
+Welcome to my terminal! Type 'help' to see the available commands.`, true);
   }
 
   /**
@@ -72,7 +72,7 @@ Welcome to my terminal! Type 'help' to see the available commands.`);
         const value = this.input.value;
         this.input.value = '';
 
-        this.printLn(value, true);
+        this.printLn(value);
         this.processInput(value);
       }
     });
@@ -91,7 +91,7 @@ Welcome to my terminal! Type 'help' to see the available commands.`);
       const command = await import(`./commands/${commandName}.js`);
       command.default.execute(this, args);
     } catch (e) {
-      this.printLn(`Command '${value}' not found... Try 'help' to see the available commands.`);
+      this.printLn(`Command '${value}' not found... Try 'help' to see the available commands.`, true);
     }
   }
 
@@ -100,18 +100,20 @@ Welcome to my terminal! Type 'help' to see the available commands.`);
    *
    * @param {string} message Message to print
    */
-  printLn(message, user = false) {
+  printLn(message, nomb = false) {
     const ul = this.terminal.querySelector('.terminal-ul');
     const li = document.createElement('li');
     li.innerHTML = message;
 
-    if (user) li.classList.add('terminal-user');
+    if (nomb) li.classList.add('no-mb');
 
     // Append the message to the terminal before the input
     ul.insertBefore(li, ul.querySelector('.terminal-input').parentNode);
 
-    // Scroll to the bottom of the terminal
-    this.terminal.scrollTop = this.terminal.scrollHeight;
+
+
+    // Scroll to the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
   }
 }
 

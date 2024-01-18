@@ -15,12 +15,12 @@ export default {
 
     let website = args[0];
     if (!website.includes('http') && !website.includes('https')) website = `http://${website}`;
-    terminal.printLn(`Pinging ${website}... `);
+    terminal.printLn(`Pinging ${website}... `, true);
 
     // Fake a ping
     const timeout = Math.floor(Math.random() * 1000) + 1;
     setTimeout(() => {
-      terminal.printLn(`${website} responded in ${timeout}ms`);
+      terminal.printLn(`${website} responded in ${timeout}ms`, true);
     }, timeout);
   }
 }
