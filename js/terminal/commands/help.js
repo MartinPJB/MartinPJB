@@ -29,16 +29,20 @@ export default {
     }
 
     else {
-      const command = import(`./${args[0]}.js`);
-      const commandDescription = (await command).default.description;
-      const commandArguments = (await command).default.arguments ?? [];
+      try {
+        const command = import(`./${args[0]}.js`);
+        const commandDescription = (await command).default.description;
+        const commandArguments = (await command).default.arguments ?? [];
 
-      terminal.printLn(`Informations about the command '${args[0]}':`, true);
-      terminal.printLn(`- Description: ${commandDescription}`, true);
-      terminal.printLn(`- Arguments:`, true);
-      for (const argument of commandArguments) {
-        const optional = argument.optional ? '' : '<span class="required">*</span>';
-        terminal.printLn(`  - <span class="terminal-argument">${argument.name}${optional}</span> - ${argument.description} (type: ${argument.type})`, true);
+        terminal.printLn(`Informations about the command '${args[0]}':`, true);
+        terminal.printLn(`- Description: ${commandDescription}`, true);
+        terminal.printLn(`- Arguments:`, true);
+        for (const argument of commandArguments) {
+          const optional = argument.optional ? '' : '<span class="required">*</span>';
+          terminal.printLn(`  - <span class="terminal-argument">${argument.name}${optional}</span> - ${argument.description} (type: ${argument.type})`, true);
+        }
+      } catch (e) {
+        return terminal.printLn(`Command '${args[0]}' not found... Try 'help' to see the available commands.`, true);
       }
     }
   }
