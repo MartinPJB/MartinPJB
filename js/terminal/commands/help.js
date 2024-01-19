@@ -36,6 +36,9 @@ export default {
 
         terminal.printLn(`Informations about the command '${args[0]}':`, true);
         terminal.printLn(`- Description: ${commandDescription}`, true);
+
+        if (commandArguments.length === 0) return terminal.printLn(`- Arguments: None`, true);
+
         terminal.printLn(`- Arguments:`, true);
         for (const argument of commandArguments) {
           const optional = argument.optional ? '' : '<span class="required">*</span>';

@@ -13,7 +13,7 @@ export default {
     const hardSkills = ['HTML', 'CSS', 'JS', 'PHP', 'Python', 'MySQL', 'Lua', 'NodeJS', 'Deno', 'Rust', 'Git', 'Figma', 'ElectronJS'];
     const softSkills = ['Adaptative', 'Autonomous', 'Curious', 'Open-minded', 'Dedicated'];
 
-    if (args.length === 0) return terminal.printLn('Please specify a skill type to display.', true);
+    if (args.length === 0) return terminal.printLn('Please specify a skill type to display (<b>soft</b> or <b>hard</b>).', true);
 
     const type = args[0];
     terminal.printLn(`Here are my ${type} skills:`, true);
@@ -25,10 +25,14 @@ export default {
         }
         break;
 
-      default:
+      case 'hard':
         for (const skill of hardSkills) {
           terminal.printLn(`- ${skill}`, true);
         }
+        break;
+
+      default:
+        terminal.printLn(`Invalid skill type '${type}'. Please specify either <b>soft</b> or <b>hard</b>.`, true);
         break;
     }
   }
