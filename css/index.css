@@ -1,0 +1,7 @@
+@import url(./imports/terminal.css);
+@import url(./imports/mobile.css);
+@import url(./imports/utils.css);
+
+* {
+  box-sizing: border-box;
+}

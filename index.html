@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terminal</title>
+  <title>martinpjb:~$ █</title>
 
-  <link rel="stylesheet" href="./css/terminal.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="./js/index.js" type="module" defer async></script>
 </head>
 <body>
-  <section id="terminal"></section>
+  <!-- PC View Terminal -->
+  <section id="terminal" class="pc_only"></section>
+
+  <!-- Mobile View Website -->
+  <section class="mobile mobile_only">
+    <pre class="mobile__title">
+███╗   ███╗ █████╗ ██████╗ ████████╗██╗███╗   ██╗██████╗     ██╗██████╗
+████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝██║████╗  ██║██╔══██╗    ██║██╔══██╗
+██╔████╔██║███████║██████╔╝   ██║   ██║██╔██╗ ██║██████╔╝    ██║██████╔╝
+██║╚██╔╝██║██╔══██║██╔══██╗   ██║   ██║██║╚██╗██║██╔═══╝██   ██║██╔══██╗
+██║ ╚═╝ ██║██║  ██║██║  ██║   ██║   ██║██║ ╚████║██║    ╚█████╔╝██████╔╝
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝     ╚════╝ ╚═════╝
+    </pre>
+
+    <p class="mobile__description">$ My name is Martin, and I am currently studying web development and lots of others things in Alsace in order to eventually become a Back End Web Developer. I am planning to acquire skills and experience in the field of web development via work-study or internships in order to make it my job.</p>
+
+    <ul class="mobile__socials">
+      <li><a href="https://github.com/MartinPJB" class="button">My GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/martin-brönnimann/" class="button">My LinkedIn</a></li>
+      <li><a href="mailto:martin.bronnimann.pj@gmail.com" class="button">Email me!</a></li>
+      <li><a href="./files/CurriculumVitae.pdf" class="button">My curriculum vitæ</a></li>
+    </ul>
+  </section>
 </body>
 </html>

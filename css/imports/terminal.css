@@ -8,10 +8,6 @@
   background: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   min-height: 100%;
 }
@@ -27,6 +23,7 @@ body {
   background-image: radial-gradient(#231d2c, #0e0416);
   color: white;
   font-size: 14px;
+  font-family: Courier, monospace;
 }
 
 /* Analog lines */
@@ -47,7 +44,6 @@ body::before {
   background-size: auto 4px;
   mix-blend-mode: overlay;
   pointer-events: none;
-  z-index: 1;
 }
 
 /* Static effect */
@@ -59,7 +55,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/random_static.gif);
+  background-image: url(../../img/random_static.gif);
   background-repeat: repeat;
   mix-blend-mode: overlay;
   pointer-events: none;
@@ -82,7 +78,8 @@ body::after {
   text-indent: -1.5em;
 
   padding-right: 1rem;
-  text-wrap: balance;
+  text-wrap: balance; /* Not supported everywhere */
+  white-space: pre-wrap;
 }
 .terminal-ul li.no-mb {
   text-indent: -.3rem;

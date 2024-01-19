@@ -1,0 +1,40 @@
+/* Responsive */
+.pc_only {
+  display: block;
+}
+
+.mobile_only {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .pc_only {
+    display: none;
+  }
+
+  .mobile_only {
+    display: block;
+  }
+}
+
+
+/* Buttons */
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black !important;
+}
+.button::before {
+  content: '< ';
+}
+.button::after {
+  content: ' >';
+}
+.button::before, .button::after {
+  font-weight: bold;
+  opacity: .3;
+}
