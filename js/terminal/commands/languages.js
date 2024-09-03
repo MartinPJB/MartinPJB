@@ -19,6 +19,10 @@ export default {
         level: 'Notions',
         comment: 'I am currently learning Danish, I like this language, and I hope to be able to speak it fluently one day.'
       },
+      'Italian': {
+        level: 'Notions',
+        comment: 'I am also learning some Italian, it\'s honestly a beautiful language and I definitely recommend it.'
+      }
     };
 
     terminal.printLn('Here are the languages I speak:', true);
