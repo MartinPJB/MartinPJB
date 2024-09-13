@@ -10,7 +10,7 @@ export default {
     }
   ],
   execute: async (terminal, args) => {
-    const commands = ["projects", "about_me", "languages", "socials", "skills", "ping", "help"];
+    const commands = ["projects", "languages", "socials", "skills", "ping", "help"];
 
     if (!args.length) {
       terminal.printLn('Here are the available commands:', true);
