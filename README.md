@@ -4,12 +4,10 @@ My name is `Martin`, and I do some programming sometimes <img src="https://cdn-i
 <h2></h2>
 
 ### My interests:
-- Computer Science 💻
 - Private Security 🛡️
-- Design 🖼️
+- Computer Science 💻
 - Music Making 🎷
 - Learning Languages 📚
-- Video Games 🕹️
 
 <h2></h2>
 
